@@ -1,0 +1,98 @@
+﻿@{
+    ViewBag.Title = "LayoutMaster";
+}
+
+@{
+    ViewBag.Title = "Index";
+    }
+    <!DOCTYPE HTML>
+<html>
+<head>
+<title>Shaveer Fitness</title>
+<!---css--->
+<link href="~/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="~/css/style.css" rel='stylesheet' type='text/css' />
+<!---css--->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Flat Gym  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!---js--->
+<script src="~/js/jquery-1.11.1.min.js"></script>
+<script src="~/js/bootstrap.js"></script>
+<!---js--->
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+    <link href="~/css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
+<link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="~/js/responsiveslides.min.js"></script>
+ <script>
+     $(function () {
+         $("#slider").responsiveSlides({
+             auto: true,
+             nav: true,
+             speed: 1000,
+             namespace: "callbacks",
+             pager: true,
+         });
+     });
+  </script>
+<!--JS for animate-->
+	<link href="~/css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<script src="~/js/wow.min.js"></script>
+		<script>
+		    new WOW().init();
+		</script>
+	<!--//end-animate-->
+    
+</head>
+<body style="background-color:white">
+<!---header--->
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header wow fadeInLeft animated animated" data-wow-delay="0.4s">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <h1><a class="navbar-brand" href="/Home/Index"><img src="~/images/e.png"/> Shaveer Fitness</a></h1>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right wow fadeInRight animated animated" data-wow-delay="0.4s">
+				<li class="active"><a class="nav-in" href="/Home/Index"><span data-letters="Home">Home</span></a></li>
+				<li><a class="nav-in" href="/CoachShav/Nutrition"><span data-letters="Nutrition">Nutrition</span></a></li>
+				<li><a class="nav-in" href="/CoachShav/Training"><span data-letters="Training">Training</span></a></li>
+				<li><a class="nav-in" href="/CoachShav/Wellness"><span data-letters="Wellness">Wellness</span></a></li>
+                <li><a class="nav-in" href="/CoachShav/Transformation"><span data-letters="Transformation">Transformation</span></a></li>
+				</ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <img src="~/images/contact.jpg" />
+   @RenderBody()
+
+    <!--copy-->
+	@*<div class="copy-section wow fadeInDownBig animated animated" data-wow-delay="0.4s">
+		<div class="container">
+				<div class="social-icons">
+					<a href="#"><i class="icon"></i></a>
+					<a href="#"><i class="icon1"></i></a>
+					<a href="#"><i class="icon2"></i></a>
+					<a href="#"><i class="icon3"></i></a>
+				</div>
+			<p>&copy; 2017 Shaveer Fitness . All rights reserved </p>
+		</div>
+	</div>*@
+	<!--copy-->
+    </body>
+    </html>
+
+
+

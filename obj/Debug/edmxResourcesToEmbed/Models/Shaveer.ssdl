@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShaveerModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ShaveerModelStoreContainer">
+    <EntitySet Name="Nutrition" EntityType="ShaveerModel.Store.Nutrition" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Training" EntityType="ShaveerModel.Store.Training" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Transformation" EntityType="ShaveerModel.Store.Transformation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Wellness" EntityType="ShaveerModel.Store.Wellness" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Nutrition">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="varchar" MaxLength="250" />
+    <Property Name="Ingredients" Type="varchar" MaxLength="450" />
+    <Property Name="NutrionalContent" Type="varchar" MaxLength="150" />
+    <Property Name="NVideoLink" Type="varchar" MaxLength="550" />
+  </EntityType>
+  <EntityType Name="Training">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="450" />
+    <Property Name="Duration" Type="varchar" MaxLength="150" />
+    <Property Name="TVideoLink" Type="varchar" MaxLength="550" />
+  </EntityType>
+  <EntityType Name="Transformation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="150" />
+    <Property Name="Message" Type="varchar" MaxLength="450" />
+    <Property Name="ImageName" Type="varchar" MaxLength="150" />
+    <Property Name="ImagePath" Type="varchar" MaxLength="550" />
+  </EntityType>
+  <EntityType Name="Wellness">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="450" />
+    <Property Name="Duration" Type="varchar" MaxLength="250" />
+    <Property Name="WVideoLink" Type="varchar" MaxLength="550" />
+  </EntityType>
+</Schema>

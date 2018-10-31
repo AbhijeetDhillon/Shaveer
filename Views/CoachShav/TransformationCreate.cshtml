@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "TransformationCreate";
+    Layout = "~/Views/CoachShav/LayoutMaster.cshtml";
+}
+
+<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">Upload Image</h3>
+@using (Html.BeginForm ("TransformationCreate",  
+                        "CoachShav",  
+                        FormMethod.Post,  
+                        new { enctype = "multipart/form-data" }))  
+{      
+    <div class="container">              
+    
+    <input type="file" name="file" class="single" style="color:black ; padding-bottom:6px"/>  Name
+    <input type="text" name="Name" class="single" style="color:black ; padding-bottom:6px"/>  Message
+    <textarea name="Message" class="single" style="color:black ; padding-bottom:6px"></textarea>
+    
+    
+    <input type="submit" value="Upload " class="btn btn-default"/>  
+       
+    <br><br>  
+   <h2 style="color:black"> @ViewBag.Message</h2>  
+    
+        </div>
+}
+<div class =" container">
+    
+   
+                               @foreach (var imgPath in Directory.GetFiles(Server.MapPath("~/Transformation"), "*.jpg"))
+
+                                   {
+                                              var img = new FileInfo(imgPath);
+                                               
+                                     
+                               
+                                <div class="col-md-4 portfolio-grids grid grid-mdl">
+									<div class="effect1 wow fadeInUp animated" data-wow-delay=".5s">
+                                      
+										<a href="@Url.Content(String.Format("~/Transformation/{0}", img.Name))" class="swipebox" >
+											<img src="@Url.Content(String.Format("~/Transformation/{0}", img.Name))" alt="" class="img-responsive" />
+											</a>	
+									</div>
+								
+                                      
+								
+								<div class="clearfix"> </div>
+							</div>
+                               }
+</div>
+

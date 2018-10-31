@@ -1,0 +1,207 @@
+﻿@model IEnumerable<Shaveer.Models.Transformation>
+
+@{
+    ViewBag.Title = "Transformation";
+    Layout = "~/Views/Shared/LayoutMain.cshtml";
+    int i = 0;
+}
+
+-gallery---
+			<div class="banner wow fadeInDownBig animated animated" data-wow-delay="0.4s">
+				<div class="container">
+					<h2>Transformations</h2>
+				</div>
+			</div>
+			<div class="trainers-section wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<div class="container">
+				<section>
+
+    
+                    
+                <ul class="lb-album">    
+                        
+                     
+                    @foreach (var imgPath in Model)
+                        
+                                   {
+                        
+                                     i = i+1;
+                                                                           
+				
+					<li class="grid ">
+						<a href="#image-@(i)">
+							<figure class="effect-apollo">
+								<img src="@Url.Content(String.Format("~/Transformation/{0}", imgPath.ImageName))" alt="image @(i)">
+								</figure>
+						</a>
+							<div class="lb-overlay" id="image-@(i)">
+									<img src="@Url.Content(String.Format("~/Transformation/{0}", imgPath.ImageName))" alt="image @(i)" />
+									<div class="gal-info">							
+										<h3>@imgPath.Name</h3>
+										<p>@imgPath.Message</p>
+									</div>
+									<a href="#" class="lb-close">X</a>
+							</div>
+					</li>
+                    
+                    
+                    }
+                    </ul>
+   					@*<li class="grid">
+						<a href="#image-1">
+							<figure class="effect-apollo">
+								<img src="~/images/t2.jpg" alt="image1">
+								<figcaption>
+								</figcaption>			
+							</figure>
+						</a>
+							<div class="lb-overlay" id="image-1">
+									<img src="~/images/t2.jpg" alt="image1" />
+									<div class="gal-info">							
+										<h3>Mike Doe</h3>
+										<p>Neque porro quisquam est, qui dolorem ipsum 
+										quia dolor sit amet, consectetur, adipisci velit, 
+										sed quia non numquam eius modi tempora .</p>
+									</div>
+									<a href="#" class="lb-close">Close</a>
+							</div>
+					</li>
+					<li class="grid">
+						<a href="#image-3">
+							<figure class="effect-apollo">
+								<img src="~/images/t3.jpg" alt="image3">
+								<figcaption>
+								</figcaption>			
+							</figure>
+						</a>
+							<div class="lb-overlay" id="image-3">
+									<img src="~/images/t3.jpg" alt="image3" />
+									<div class="gal-info">							
+										<h3>jhon black</h3>
+										<p>Neque porro quisquam est, qui dolorem ipsum 
+										quia dolor sit amet, consectetur, adipisci velit, 
+										sed quia non numquam eius modi tempora .</p>
+									</div>
+									<a href="#" class="lb-close">Close</a>
+							</div>
+					</li>
+					<li class="grid">
+						<a href="#image-4">
+							<figure class="effect-apollo">
+								<img src="~/images/t4.jpg" alt="image4">
+								<figcaption>
+								</figcaption>			
+							</figure>
+						</a>
+							<div class="lb-overlay" id="image-4">
+									<img src="~/images/t4.jpg" alt="image4" />
+									<div class="gal-info">							
+										<h3>Olivia White</h3>
+										<p>Neque porro quisquam est, qui dolorem ipsum 
+										quia dolor sit amet, consectetur, adipisci velit, 
+										sed quia non numquam eius modi tempora .</p>
+									</div>
+									<a href="#" class="lb-close">Close</a>
+							</div>
+					</li>
+					<li class="grid">
+						<a href="#image-5">
+							<figure class="effect-apollo">
+								<img src="~/images/t5.jpg" alt="image5">
+								<figcaption>
+								</figcaption>			
+							</figure>
+						</a>
+							<div class="lb-overlay" id="image-5">
+									<img src="~/images/t5.jpg" alt="image5" />
+									<div class="gal-info">							
+										<h3>Mike Doe</h3>
+										<p>Neque porro quisquam est, qui dolorem ipsum 
+										quia dolor sit amet, consectetur, adipisci velit, 
+										sed quia non numquam eius modi tempora .</p>
+									</div>
+									<a href="#" class="lb-close">Close</a>
+							</div>
+					</li>
+					<li class="grid">
+						<a href="#image-6">
+							<figure class="effect-apollo">
+								<img src="~/images/t6.jpg" alt="image6">
+								<figcaption>
+								</figcaption>			
+							</figure>
+						</a>
+							<div class="lb-overlay" id="image-6">
+									<img src="~/images/t6.jpg" alt="image6" />
+									<div class="gal-info">							
+										<h3> Emma black</h3>
+										<p>Neque porro quisquam est, qui dolorem ipsum 
+										quia dolor sit amet, consectetur, adipisci velit, 
+										sed quia non numquam eius modi tempora .</p>
+									</div>
+									<a href="#" class="lb-close">Close</a>
+							</div>
+					</li>
+					<li class="grid">
+						<a href="#image-7">
+							<figure class="effect-apollo">
+								<img src="~/images/t3.jpg" alt="image7">
+								<figcaption>
+								</figcaption>			
+							</figure>
+						</a>
+							<div class="lb-overlay" id="image-7">
+									<img src="~/images/t3.jpg" alt="image7" />
+									<div class="gal-info">							
+										<h3>jhon black</h3>
+										<p>Neque porro quisquam est, qui dolorem ipsum 
+										quia dolor sit amet, consectetur, adipisci velit, 
+										sed quia non numquam eius modi tempora .</p>
+									</div>
+									<a href="#" class="lb-close">Close</a>
+							</div>
+					</li>
+					<li class="grid">
+						<a href="#image-8">
+							<figure class="effect-apollo">
+								<img src="~/images/t1.jpg" alt="image8">
+								<figcaption>
+								</figcaption>			
+							</figure>
+						</a>
+							<div class="lb-overlay" id="image-8">
+									<img src="~/images/t1.jpg" alt="image8" />
+									<div class="gal-info">							
+										<h3>Olivia White</h3>
+										<p>Neque porro quisquam est, qui dolorem ipsum 
+										quia dolor sit amet, consectetur, adipisci velit, 
+										sed quia non numquam eius modi tempora .</p>
+									</div>
+									<a href="#" class="lb-close">Close</a>
+							</div>
+					</li>
+					<li class="grid">
+						<a href="#image-1">
+							<figure class="effect-apollo">
+								<img src="~/images/t2.jpg" alt="image4">
+								<figcaption>
+								</figcaption>			
+							</figure>
+						</a>
+							<div class="lb-overlay" id="image-12">
+									<img src="~/images/t2.jpg" alt="image4" />
+									<div class="gal-info">							
+										<h3>Mike Doe</h3>
+										<p>Neque porro quisquam est, qui dolorem ipsum 
+										quia dolor sit amet, consectetur, adipisci velit, 
+										sed quia non numquam eius modi tempora .</p>
+									</div>
+									<a href="#" class="lb-close">Close</a>
+							</div>
+					</li>
+				</ul>*@
+			</section>
+
+		</div>
+	</div>
+<!-- //gallery 

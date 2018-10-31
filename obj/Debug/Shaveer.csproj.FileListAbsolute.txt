@@ -1,0 +1,32 @@
+D:\MVC\Shaveer\Shaveer\bin\Shaveer.dll
+D:\MVC\Shaveer\Shaveer\bin\Shaveer.pdb
+D:\MVC\Shaveer\Shaveer\bin\Antlr3.Runtime.dll
+D:\MVC\Shaveer\Shaveer\bin\EntityFramework.dll
+D:\MVC\Shaveer\Shaveer\bin\Microsoft.Web.Infrastructure.dll
+D:\MVC\Shaveer\Shaveer\bin\Newtonsoft.Json.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Net.Http.Formatting.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Http.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Http.WebHost.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Mvc.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Optimization.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Providers.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Razor.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Web.WebPages.Deployment.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Web.WebPages.dll
+D:\MVC\Shaveer\Shaveer\bin\System.Web.WebPages.Razor.dll
+D:\MVC\Shaveer\Shaveer\bin\WebGrease.dll
+D:\MVC\Shaveer\Shaveer\bin\EntityFramework.xml
+D:\MVC\Shaveer\Shaveer\bin\Newtonsoft.Json.xml
+D:\MVC\Shaveer\Shaveer\bin\System.Net.Http.Formatting.xml
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Http.xml
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Http.WebHost.xml
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Mvc.xml
+D:\MVC\Shaveer\Shaveer\bin\System.Web.Razor.xml
+D:\MVC\Shaveer\Shaveer\bin\System.Web.WebPages.xml
+D:\MVC\Shaveer\Shaveer\bin\System.Web.WebPages.Deployment.xml
+D:\MVC\Shaveer\Shaveer\bin\System.Web.WebPages.Razor.xml
+D:\MVC\Shaveer\Shaveer\obj\Debug\Shaveer.csprojResolveAssemblyReference.cache
+D:\MVC\Shaveer\Shaveer\obj\Debug\Shaveer.dll
+D:\MVC\Shaveer\Shaveer\obj\Debug\Shaveer.pdb
+F:\D Drive\MVC\Shaveer\Shaveer\obj\Debug\Shaveer.csprojResolveAssemblyReference.cache
+F:\D Drive\MVC\Shaveer\Shaveer\obj\Debug\Shaveer.dll

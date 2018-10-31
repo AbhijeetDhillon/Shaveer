@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Shaveer.Models.Transformation>
+
+@{
+    ViewBag.Title = "TransformationDelete";
+    Layout = "~/Views/CoachShav/LayoutMaster.cshtml";
+}
+
+
+<div class =" container">
+    
+   @*@foreach (var imgPath in Directory.GetFiles(Server.MapPath("~/Transformation"), "*.jpg"))
+
+       {
+                                              var img = new FileInfo(imgPath);
+                               
+                                               string ImageName= img.Name;
+                                         
+       
+                            
+                                *@
+    
+                            @foreach( var img in Model)
+                            {
+
+                                    <div class="col-md-4 portfolio-grids grid grid-mdl">
+									<div class="effect1 wow fadeInUp animated" data-wow-delay=".5s">
+                                      
+										<a href="@Url.Content(String.Format("~/Transformation/{0}", img.ImageName))" class="swipebox" >
+											<img src="@Url.Content(String.Format("~/Transformation/{0}", img.ImageName))" alt="" class="img-responsive" />
+											</a>	
+                                        <form name="deletePhoto" action="/CoachShav/TransformationDelete" method="post"  >
+                                                 <input name="photoFileName" value="@Html.DisplayFor(modelItem => img.ImageName)" />
+                                                <input name="Name" value="@img.Name" />
+                                             <input name="Name" value="@img.Message" />
+                                             
+											<div class="figcaption">
+												<p><input type="submit" value="Delete" class="btn btn-default"/> </p>
+                                           </div>     
+
+                                             </form>
+
+
+
+									</div>
+								
+                                      
+								
+								<div class="clearfix"> </div>
+							</div>
+                               }
+</div>

@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "NutritionCreate";
+    Layout = "~/Views/CoachShav/LayoutMaster.cshtml";
+}
+
+<h2>Nutrition Upload</h2>
+
+<!-- Registration form - START -->
+<div class="container">
+    <div class="row">
+        <form role="form" action="/CoachShav/NutritionCreate" method="post">
+            <div class="col-lg-6">
+                <div class="well well-sm"><span class="glyphicon glyphicon-asterisk"></span>Required Field</div>
+                <div class="form-group"> 
+                    <label for="InputName">Title</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="Title" id="InputName" placeholder="Enter Title" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputName">Ingredients</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="Ingredients" id="InputEmail" placeholder="Enter Ingredients" required >
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputName">Nutrional Content</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="Nutritional Content" id="Inputcontact" placeholder="Carbs,Proteins,Fats"  required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputName">Video Link</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="VideoLink" id="Inputcontact2" placeholder="Enter Video Link here" required>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+
+                 
+             <input type="submit" name="submit" id="submit" value="Upload" class="btn btn-info pull-right">
+            </div>
+        </form>
+        
+    </div>
+</div>
+<!-- Registration form - END -->

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShaveerModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ShaveerEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Nutritions" EntityType="ShaveerModel.Nutrition" />
+    <EntitySet Name="Trainings" EntityType="ShaveerModel.Training" />
+    <EntitySet Name="Transformations" EntityType="ShaveerModel.Transformation" />
+    <EntitySet Name="Wellnesses" EntityType="ShaveerModel.Wellness" />
+  </EntityContainer>
+  <EntityType Name="Nutrition">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Ingredients" Type="String" MaxLength="450" Unicode="false" FixedLength="false" />
+    <Property Name="NutrionalContent" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="NVideoLink" Type="String" MaxLength="550" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Training">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="450" Unicode="false" FixedLength="false" />
+    <Property Name="Duration" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="TVideoLink" Type="String" MaxLength="550" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Transformation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Message" Type="String" MaxLength="450" Unicode="false" FixedLength="false" />
+    <Property Name="ImageName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ImagePath" Type="String" MaxLength="550" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Wellness">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="450" Unicode="false" FixedLength="false" />
+    <Property Name="Duration" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="WVideoLink" Type="String" MaxLength="550" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>
